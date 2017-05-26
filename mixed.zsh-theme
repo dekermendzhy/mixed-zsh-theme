@@ -19,13 +19,13 @@ ZSH_THEME_GIT_PROMPT_RENAMED=" %{$fg[blue]%}➜"
 
 autoload colors && colors
 
-if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="green"; fi
+if [ $UID -eq 0 ]; then NCOLOR="green"; else NCOLOR="cyan"; fi
 
 local exit_code="%(?,,C:%{$fg[red]%}%?%{$reset_color%})"
 
-PROMPT='%{$fg_bold[$NCOLOR]%}%n@%m%{$reset_color%} %{$fg[white]%}in \
-%{$fg_bold[yellow]%}%B%c/%b%{$reset_color%} $(git_prompt_info) $exit_code
-%{$fg[magenta]%}$%{$reset_color%} '
+PROMPT='%{$fg_bold[$NCOLOR]%}%n@%m%{$reset_color%} %{$fg_bold[white]%}in \
+%{$fg_bold[yellow]%}[%B%c]%b%{$reset_color%} $(git_prompt_info) $exit_code
+%{$fg_bold[white]%}$%{$reset_color%} '
 
 export CLICOLOR=1
 export LSCOLORS='Exfxcxdxbxegedabagacad' # only with Dark Background
