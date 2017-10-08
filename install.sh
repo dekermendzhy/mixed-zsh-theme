@@ -18,7 +18,7 @@ function message() {
 }
 
 # Files
-REMOTE='https://github.com/dekermendzhy/mixed-zsh-theme/blob/master/mixed.zsh-theme'
+REMOTE='https://raw.githubusercontent.com/dekermendzhy/mixed-zsh-theme/master/mixed.zsh-theme'
 THEME="$ZSH_CUSTOM/themes/mixed.zsh-theme"
 
 # If themes folder isn't exist, then make it
